@@ -56,11 +56,11 @@ class USPhoneNumber(val s: String) extends AnyVal
 val number = new USPhoneNumber("987-654-2341")
 // Resukt: number: USPhoneNumber = (987) 654-3241
 
-Formatter solves a design problem, we might like to specify a second argument
-to USPhoneNumber for a format string or other formatting mechanism, but we can't
-because we are only allowed to pass one argument to the constructor, but we can
-mix in universal traits to do the configuration we want.
+// Formatter solves a design problem, we might like to specify a second argument
+// to USPhoneNumber for a format string or other formatting mechanism, but we can't
+// because we are only allowed to pass one argument to the constructor, but we can
+// mix in universal traits to do the configuration we want.
 
-The term value type refers to the Short, Int, Long, Float, Double, Boolean, Char,
-Byte, and Unit types Scala has had for a long time. The term value class refers
-to the new construct for defining custom classes that derive from AnyVal.
+// The term value type refers to the Short, Int, Long, Float, Double, Boolean, Char,
+// Byte, and Unit types Scala has had for a long time. The term value class refers
+// to the new construct for defining custom classes that derive from AnyVal.
